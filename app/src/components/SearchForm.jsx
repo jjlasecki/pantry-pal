@@ -13,7 +13,7 @@ export default function SearchForm({ onSearch }) {
     <form className="search-form" onSubmit={handleSearch}>
       <input
         type="text"
-        placeholder="Example: Chicken, pasta, apples..."
+        placeholder="Search by ingredient (e.g. chicken)"
         value={ingredient}
         onChange={(event) => setIngredient(event.target.value)}
       />

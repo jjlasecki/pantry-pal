@@ -11,6 +11,6 @@ export async function searchMealsByIngredient(ingredient) {
     },
   });
 
-  return response.data.meals;
+  return response.data.meals || [];
 }
 export default mealApi;

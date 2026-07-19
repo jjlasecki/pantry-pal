@@ -1,0 +1,15 @@
+.empty-state {
+  margin-top: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.empty-state h2 {
+  margin-bottom: 0.5rem;
+}
+
+.empty-state p {
+  color: var(--color-text-secondary);
+  font-size: 1.05rem;
+}
+
