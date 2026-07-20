@@ -1,16 +1,53 @@
 nav {
   background-color: var(--primary);
-  padding: 1.25rem 2rem;
+  padding: 0.75rem 2rem;
   display: flex;
+  justify-content: center;
+}
+
+.site-brand {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-nav h1 {
+.site-logo {
+  width: 450px;
+  max-width: 90vw;
+  height: 150px;
+  object-fit: cover;
+  object-position: center 33%;
+  display: block;
+}
+
+.site-brand h1 {
+  margin: -0.5rem 0 0;
   color: var(--background);
   font-size: 2.5rem;
   font-weight: 700;
+  line-height: 1;
 }
 
-.navbar-brand {
-  text-align: center;
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: min(650px, 90vw);
+
+  margin: 0.75rem auto 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: var(--background);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.nav-links a:hover {
+  opacity: 0.75;
 }

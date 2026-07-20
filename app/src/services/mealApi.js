@@ -13,4 +13,15 @@ export async function searchMealsByIngredient(ingredient) {
 
   return response.data.meals || [];
 }
+
+export async function getMealById(id) {
+  const response = await mealApi.get("lookup.php", {
+    params: {
+      i: id,
+    },
+  });
+
+  return response.data.meals?.[0] || null;
+}
+
 export default mealApi;
