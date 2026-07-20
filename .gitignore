@@ -1,0 +1,25 @@
+# ============================
+# Pantry Pal .gitignore
+# ============================
+
+# React app dependencies
+app/node_modules/
+
+# Production build
+app/dist/
+
+# Environment variables
+app/.env
+app/.env.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
